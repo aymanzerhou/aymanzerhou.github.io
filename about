@@ -1,0 +1,8 @@
+🔮 3D Render
+An immersive 3D rendering engine that brings three-dimensional scenes to life with realistic lighting, shading, and visual effects. Built from the ground up to deliver high-quality real-time graphics, this project demonstrates advanced computer graphics techniques including perspective projection, surface rendering, and dynamic light interactions.
+
+2. 🤖 Code Solver
+An intelligent AI-powered chatbot designed to help developers tackle coding challenges effortlessly. Featuring voice input and text-to-speech output through the Web Speech API, this assistant provides a hands-free problem-solving experience. Simply speak your coding question and receive a spoken solution — making debugging and learning more intuitive and accessible than ever.
+
+3. ♟️ Chess Game
+A fully-featured chess game available as both a web application and a standalone desktop client built with Python and Tkinter. Whether you want to test your skills against a smart AI opponent or enjoy a classic match with a friend on the same screen, this dual-platform experience delivers smooth gameplay with complete rule enforcement, move validation, and an intuitive interface across all supported platforms.
