@@ -28,6 +28,7 @@
             --gradient-1: linear-gradient(135deg, #6c63ff 0%, #e942f5 100%);
             --gradient-2: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
             --gradient-3: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
         }
 
         html {
@@ -423,6 +424,7 @@
         .project-card:nth-child(1)::before { background: var(--gradient-1); }
         .project-card:nth-child(2)::before { background: var(--gradient-2); }
         .project-card:nth-child(3)::before { background: var(--gradient-3); }
+        .project-card:nth-child(4)::before { background: var(--gradient-4); }
 
         .project-icon {
             width: 56px;
@@ -448,6 +450,11 @@
         .project-card:nth-child(3) .project-icon {
             background: rgba(248, 87, 166, 0.12);
             box-shadow: 0 4px 20px rgba(248, 87, 166, 0.15);
+        }
+
+        .project-card:nth-child(4) .project-icon {
+            background: rgba(67, 233, 123, 0.12);
+            box-shadow: 0 4px 20px rgba(67, 233, 123, 0.15);
         }
 
         .project-card h3 {
@@ -749,7 +756,7 @@
     <!-- Stats Bar -->
     <div class="stats-bar">
         <div class="stat">
-            <div class="stat-number">3</div>
+            <div class="stat-number">4</div>
             <div class="stat-label">Projects Built</div>
         </div>
         <div class="stat">
@@ -830,6 +837,25 @@
                 </a>
             </div>
 
+            <!-- Project 4: Dangerous Dave -->
+            <div class="project-card" data-delay="450">
+                <div class="project-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#43e97b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <h3>Dangerous Dave</h3>
+                <p>A faithful recreation of the legendary Dangerous Dave platformer game. Navigate through treacherous levels, dodge deadly obstacles, and collect trophies in this classic side-scrolling adventure rebuilt from scratch in C.</p>
+                <div class="project-tags">
+                    <span class="tag">C</span>
+                    <span class="tag">Game Dev</span>
+                    <span class="tag">Platformer</span>
+                    <span class="tag">CodeBlocks</span>
+                </div>
+                <a href="https://github.com/aymanzerhou/Dangerous-Dave" target="_blank" class="project-link">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -887,6 +913,7 @@
             <a href="https://github.com/aymanzerhou/3D-Render-" target="_blank">3D Render</a>
             <a href="https://github.com/aymanzerhou/Code-Solver" target="_blank">Code Solver</a>
             <a href="https://github.com/aymanzerhou/Chess-Game-" target="_blank">Chess Game</a>
+            <a href="https://github.com/aymanzerhou/Dangerous-Dave" target="_blank">Dangerous Dave</a>
         </div>
         <p class="footer-copy">Built with <span>&hearts;</span> by Ayman Zerhou</p>
     </footer>
