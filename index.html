@@ -29,6 +29,7 @@
             --gradient-2: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
             --gradient-3: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);
             --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
         }
 
         html {
@@ -375,7 +376,7 @@
         /* ===== PROJECTS GRID ===== */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 28px;
             max-width: 1200px;
             margin: 0 auto;
@@ -425,6 +426,7 @@
         .project-card:nth-child(2)::before { background: var(--gradient-2); }
         .project-card:nth-child(3)::before { background: var(--gradient-3); }
         .project-card:nth-child(4)::before { background: var(--gradient-4); }
+        .project-card:nth-child(5)::before { background: var(--gradient-5); }
 
         .project-icon {
             width: 56px;
@@ -455,6 +457,11 @@
         .project-card:nth-child(4) .project-icon {
             background: rgba(67, 233, 123, 0.12);
             box-shadow: 0 4px 20px rgba(67, 233, 123, 0.15);
+        }
+
+        .project-card:nth-child(5) .project-icon {
+            background: rgba(247, 151, 30, 0.12);
+            box-shadow: 0 4px 20px rgba(247, 151, 30, 0.15);
         }
 
         .project-card h3 {
@@ -756,7 +763,7 @@
     <!-- Stats Bar -->
     <div class="stats-bar">
         <div class="stat">
-            <div class="stat-number">4</div>
+            <div class="stat-number">5</div>
             <div class="stat-label">Projects Built</div>
         </div>
         <div class="stat">
@@ -851,6 +858,25 @@
                     <span class="tag">CodeBlocks</span>
                 </div>
                 <a href="https://github.com/aymanzerhou/Dangerous-Dave" target="_blank" class="project-link">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
+            <!-- Project 5: Space Invader -->
+            <div class="project-card" data-delay="600">
+                <div class="project-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f7971e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                </div>
+                <h3>Space Invaders</h3>
+                <p>A classic arcade-style 2D horizontal shooter recreated in C++. Control a cannon at the bottom of the screen, fire at waves of descending alien invaders, and rack up points in this faithful tribute to the legendary 1978 original.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Game Dev</span>
+                    <span class="tag">Arcade</span>
+                    <span class="tag">2D Shooter</span>
+                </div>
+                <a href="https://github.com/aymanzerhou/Space-Invader" target="_blank" class="project-link">
                     View on GitHub
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
