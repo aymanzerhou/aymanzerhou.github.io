@@ -30,6 +30,7 @@
             --gradient-3: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);
             --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
             --gradient-5: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+            --gradient-6: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
         }
 
         html {
@@ -427,6 +428,7 @@
         .project-card:nth-child(3)::before { background: var(--gradient-3); }
         .project-card:nth-child(4)::before { background: var(--gradient-4); }
         .project-card:nth-child(5)::before { background: var(--gradient-5); }
+        .project-card:nth-child(6)::before { background: var(--gradient-6); }
 
         .project-icon {
             width: 56px;
@@ -462,6 +464,11 @@
         .project-card:nth-child(5) .project-icon {
             background: rgba(247, 151, 30, 0.12);
             box-shadow: 0 4px 20px rgba(247, 151, 30, 0.15);
+        }
+
+        .project-card:nth-child(6) .project-icon {
+            background: rgba(161, 140, 209, 0.15);
+            box-shadow: 0 4px 20px rgba(161, 140, 209, 0.15);
         }
 
         .project-card h3 {
@@ -763,7 +770,7 @@
     <!-- Stats Bar -->
     <div class="stats-bar">
         <div class="stat">
-            <div class="stat-number">5</div>
+            <div class="stat-number">6</div>
             <div class="stat-label">Projects Built</div>
         </div>
         <div class="stat">
@@ -882,6 +889,25 @@
                 </a>
             </div>
 
+            <!-- Project 6: Breakout -->
+            <div class="project-card" data-delay="750">
+                <div class="project-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a18cd1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="16" width="20" height="4" rx="2"></rect><rect x="6" y="8" width="12" height="8" rx="1"></rect><rect x="9" y="2" width="6" height="6" rx="1"></rect></svg>
+                </div>
+                <h3>Breakout</h3>
+                <p>A classic brick-breaking arcade game where players control a paddle to bounce a ball and destroy layers of colorful bricks. Features multiple levels, power-ups, and smooth physics-based gameplay.</p>
+                <div class="project-tags">
+                    <span class="tag">C</span>
+                    <span class="tag">Game Dev</span>
+                    <span class="tag">Arcade</span>
+                    <span class="tag">Breakout</span>
+                </div>
+                <a href="https://github.com/aymanzerhou/Breakout" target="_blank" class="project-link">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -945,6 +971,7 @@
             <a href="https://github.com/aymanzerhou/Chess-Game-" target="_blank">Chess Game</a>
             <a href="https://github.com/aymanzerhou/Dangerous-Dave" target="_blank">Dangerous Dave</a>
             <a href="https://github.com/aymanzerhou/Space-Invader" target="_blank">Space Invaders</a>
+            <a href="https://github.com/aymanzerhou/Breakout" target="_blank">Breakout</a>
         </div>
         <p class="footer-copy">Built with <span>&hearts;</span> by Ayman Zerhoun</p>
     </footer>
