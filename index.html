@@ -31,6 +31,8 @@
             --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
             --gradient-5: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
             --gradient-6: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            --gradient-7: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+            --gradient-8: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
         }
 
         html {
@@ -429,6 +431,8 @@
         .project-card:nth-child(4)::before { background: var(--gradient-4); }
         .project-card:nth-child(5)::before { background: var(--gradient-5); }
         .project-card:nth-child(6)::before { background: var(--gradient-6); }
+        .project-card:nth-child(7)::before { background: var(--gradient-7); }
+        .project-card:nth-child(8)::before { background: var(--gradient-8); }
 
         .project-icon {
             width: 56px;
@@ -469,6 +473,16 @@
         .project-card:nth-child(6) .project-icon {
             background: rgba(161, 140, 209, 0.15);
             box-shadow: 0 4px 20px rgba(161, 140, 209, 0.15);
+        }
+
+        .project-card:nth-child(7) .project-icon {
+            background: rgba(221, 36, 118, 0.12);
+            box-shadow: 0 4px 20px rgba(221, 36, 118, 0.15);
+        }
+
+        .project-card:nth-child(8) .project-icon {
+            background: rgba(17, 153, 142, 0.12);
+            box-shadow: 0 4px 20px rgba(17, 153, 142, 0.15);
         }
 
         .project-card h3 {
@@ -908,6 +922,46 @@
                 </a>
             </div>
 
+            <!-- Project 7: OptiStack AI (PFA) -->
+            <div class="project-card" data-delay="900">
+                <div class="project-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#dd2476" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path><path d="M9.5 13.5l1.5-2 1.5 2.5 1-1.5"></path></svg>
+                </div>
+                <h3>OptiStack AI</h3>
+                <p>An intelligent conversational assistant for OpenStack cloud administration, built during my end-of-year internship at Huawei. It combines real-time infrastructure diagnostics via Gemini function calling with a hybrid rules + Machine Learning module that recommends optimal instance sizing based on real usage history.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Gemini API</span>
+                    <span class="tag">OpenStack SDK</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">FastAPI</span>
+                </div>
+                <a href="https://github.com/aymanzerhou/PFA_Ayman_ZERHOUN" target="_blank" class="project-link">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
+            <!-- Project 8: RAG Pipeline -->
+            <div class="project-card" data-delay="1050">
+                <div class="project-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#38ef7d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><line x1="9" y1="7" x2="15" y2="7"></line><line x1="9" y1="11" x2="15" y2="11"></line></svg>
+                </div>
+                <h3>RAG Pipeline</h3>
+                <p>A complete Retrieval-Augmented Generation system built to study extreme cold events in Europe. Compares seven chunking strategies and multiple embedding methods with custom evaluation metrics, then serves extractive answers over a FastAPI backend with a three-step web interface (chunking, embedding, query).</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">TF-IDF</span>
+                    <span class="tag">RAG</span>
+                </div>
+                <a href="https://github.com/aymanzerhou/PFA_Ayman_ZERHOUN" target="_blank" class="project-link">
+                    View on GitHub
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -972,6 +1026,8 @@
             <a href="https://github.com/aymanzerhou/Dangerous-Dave" target="_blank">Dangerous Dave</a>
             <a href="https://github.com/aymanzerhou/Space-Invader" target="_blank">Space Invaders</a>
             <a href="https://github.com/aymanzerhou/Breakout" target="_blank">Breakout</a>
+            <a href="https://github.com/aymanzerhou/PFA_Ayman_ZERHOUN" target="_blank">OptiStack AI</a>
+            <a href="https://github.com/aymanzerhou/PFA_Ayman_ZERHOUN" target="_blank">RAG Pipeline</a>
         </div>
         <p class="footer-copy">Built with <span>&hearts;</span> by Ayman Zerhoun</p>
     </footer>
